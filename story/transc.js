@@ -3,4 +3,4 @@ function initMap() {
     zoom: 10,
     center: { lat: 13.0478078, lng: 80.0442026 },
   });
-
+}
