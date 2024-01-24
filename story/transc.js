@@ -42,3 +42,4 @@ function initMap() {
         line.set("icons", icons);
       }, 20);
     }
+window.initMap = initMap;
