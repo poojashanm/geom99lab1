@@ -15,9 +15,6 @@ function initMap() {
         path: [
           { lat: 12.892845677230484, lng: 80.25356591855626 },
           { lat: 12.975107053852348, lng: 80.26651412745153 },
-          { lat: 13.050370949901755, lng: 80.28237134709286 },
-          { lat: 13.131316772725338, lng: 80.30329257745409 },
-          { lat: 13.171142451293592, lng: 80.31161815439889 },
         ],
         icons: [
           {
@@ -27,7 +24,19 @@ function initMap() {
         ],
         map: map,
       });
-    
+        const line = new google.maps.Polyline({
+        path: [
+          { lat: 12.975107053852348, lng: 80.26651412745153 },
+          { lat: 13.050370949901755, lng: 80.28237134709286 },
+        ],
+        icons: [
+          {
+            icon: lineSymbol,
+            offset: "100%",
+          },
+        ],
+        map: map,
+      });
       animateCircle(line);
     }
     
