@@ -1,7 +1,7 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), 
     {
-      zoom: 11,
+      zoom: 13,
       center: { lat: 13.050370949901755, lng: 80.28237134709286 },
       mapTypeId: "terrain",
     });
@@ -15,6 +15,10 @@ function initMap() {
         path: [
           { lat: 12.892845677230484, lng: 80.25356591855626 },
           { lat: 12.975107053852348, lng: 80.26651412745153 },
+        ],
+        path: [
+          { lat: 12.975107053852348, lng: 80.26651412745153 },
+          { lat: 13.050370949901755, lng: 80.28237134709286 },
         ],
         icons: [
           {
