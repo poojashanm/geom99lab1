@@ -23,7 +23,6 @@ function initMap() {
             offset: "100%",
           },
         ],
-        map: map,
       });
       animateCircle(line);
     }
