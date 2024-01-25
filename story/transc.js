@@ -1,10 +1,11 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), 
     {
-      zoom: 13,
+      zoom: 12,
       center: { lat: 13.050370949901755, lng: 80.28237134709286 },
       mapTypeId: "satellite",
     });
+    map.setTilt(45);
     const lineSymbol = {
         path: google.maps.SymbolPath.CIRCLE,
         scale: 8,
@@ -15,10 +16,6 @@ function initMap() {
         path: [
           { lat: 12.892845677230484, lng: 80.25356591855626 },
           { lat: 12.975107053852348, lng: 80.26651412745153 },
-        ],
-        path: [
-          { lat: 12.975107053852348, lng: 80.26651412745153 },
-          { lat: 13.050370949901755, lng: 80.28237134709286 },
         ],
         icons: [
           {
@@ -44,6 +41,5 @@ function initMap() {
         icons[0].offset = count / 2 + "%";
         line.set("icons", icons);
       }, 20);
-    map.setTilt(45);
     }
 window.initMap = initMap;
