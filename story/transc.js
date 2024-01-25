@@ -1,8 +1,8 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), 
     {
-      zoom: 10,
-      center: { lat: 13.0983056825, lng: 80.27560200 },
+      zoom: 11,
+      center: { lat: 13.050370949901755, lng: 80.28237134709286 },
       mapTypeId: "terrain",
     });
     const lineSymbol = {
