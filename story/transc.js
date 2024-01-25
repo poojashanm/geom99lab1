@@ -24,7 +24,7 @@ function initMap() {
         ],
         map: map,
       });
-        const line = new google.maps.Polyline({
+        const line1 = new google.maps.Polyline({
         path: [
           { lat: 12.975107053852348, lng: 80.26651412745153 },
           { lat: 13.050370949901755, lng: 80.28237134709286 },
@@ -49,6 +49,7 @@ function initMap() {
         count = (count + 1) % 200;
     
         const icons = line.get("icons");
+        const icons = line1.get("icons");
     
         icons[0].offset = count / 2 + "%";
         line.set("icons", icons);
