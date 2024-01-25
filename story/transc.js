@@ -3,7 +3,7 @@ function initMap() {
     {
       zoom: 13,
       center: { lat: 13.050370949901755, lng: 80.28237134709286 },
-      mapTypeId: "terrain",
+      mapTypeId: "satellite",
     });
     const lineSymbol = {
         path: google.maps.SymbolPath.CIRCLE,
@@ -44,5 +44,6 @@ function initMap() {
         icons[0].offset = count / 2 + "%";
         line.set("icons", icons);
       }, 20);
+    map.setTilt(45);
     }
 window.initMap = initMap;
